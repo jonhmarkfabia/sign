@@ -1,0 +1,85 @@
+/* styles.css */
+body {
+    font-family: 'Arial', sans-serif; /* Changed font for better readability */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #f0f8ff; /* Light blue background */
+}
+
+.container {
+    background-color: #ffffff;
+    padding: 30px; /* Increased padding */
+    border-radius: 10px; /* More rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Slightly stronger shadow */
+    width: 450px; /* Increased container width */
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 30px; /* Increased margin */
+    color: #333;
+}
+
+.form-group {
+    margin-bottom: 20px; /* Increased margin */
+}
+
+label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+    color: #555;
+}
+
+input[type="text"],
+input[type="number"],
+input[type="email"],
+textarea {
+    width: calc(100% - 16px); /* Adjusted for increased padding */
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-sizing: border-box;
+    font-size: 16px;
+    transition: border-color 0.3s ease; /* Added transition for hover effect */
+}
+
+input[type="text"]:focus,
+input[type="number"]:focus,
+input[type="email"]:focus,
+textarea:focus {
+    border-color: #4CAF50; /* Green border on focus */
+    outline: none; /* Remove default focus outline */
+}
+
+textarea {
+    resize: vertical;
+    min-height: 120px; /* Increased min-height */
+}
+
+button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100%;
+    font-size: 16px;
+    transition: background-color 0.3s ease; /* Added transition */
+}
+
+button:hover {
+    background-color: #3e8e41;
+}
+
+/* Responsive adjustments */
+@media (max-width: 600px) {
+    .container {
+        width: 90%;
+        padding: 20px;
+    }
+}
